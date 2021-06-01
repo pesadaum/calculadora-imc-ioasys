@@ -1,3 +1,4 @@
+import 'package:calculadora_imc_ioasys/core/core.dart';
 import 'package:calculadora_imc_ioasys/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,6 +21,9 @@ class _MyAppState extends State<MyApp> {
         '/homepage': (context) => HomePage(),
       },
       theme: ThemeData(
+        primaryColor: AppColors.primaryColor,
+        // ignore: deprecated_member_use
+        accentColor: AppColors.backgroundColor,
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
         ),
